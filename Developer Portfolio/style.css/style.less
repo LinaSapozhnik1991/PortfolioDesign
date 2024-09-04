@@ -1,0 +1,400 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@grey: rgba(102, 102, 102, 1);
+@light: rgba(255, 255, 255, 1);
+@content: rgba(66, 68, 110, 1);
+@dark: rgba(21, 20, 57, 0.4);
+
+
+
+
+
+body{
+  font-family: 'Poppins';
+  max-width: 1600px;
+  background-color: @light;
+
+
+}
+.container{
+    margin:0 auto ;
+   width: 1210px;
+
+}
+//header
+header{
+    font-family: 'Dm Sans';
+    padding-top: 20px;
+
+    
+    .menu{
+        display: flex;
+        justify-content: space-between;
+    
+        width: 1193px;
+height: 59px;
+.logo img{
+    width: 97px;
+height: 59px;
+
+
+}
+
+
+        .menu-link {
+            margin-left: 350px;
+            
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+          a{
+            text-decoration: none;
+            
+            margin-right: 25px;
+            font-size: 20px;
+font-weight: 500;
+line-height: 26px;
+text-align: center;
+color: @grey;
+
+          }
+        }
+        .contacts-links img{
+            margin-right: 10px;
+          
+        }
+        a{
+            text-decoration: none;
+        }
+    }
+}
+//main-content
+.main-content{
+    padding-top: 150px;
+
+    display: flex;
+    justify-content: space-between;
+    &-text{
+
+
+margin-top: 45px;
+
+
+font-size: 52px;
+font-weight: 700;
+line-height: 70px;
+
+text-align: left;
+color:@content;
+span{
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(90deg, #13B0F5 -2.06%, #E70FAA 100%);
+    
+}
+    }
+    &-ava img{
+        width: 349px;
+height: 349px;
+    }
+}
+//stack
+.stack{
+    margin-top: 120px;
+
+    &-title {
+        padding-top: 50px;
+        text-align: center;
+        line-height: 26px;
+
+h2{
+    color: @content;
+        
+    font-size: 48px;
+    font-weight: 700;
+
+}
+h3{
+  margin-top: 25px;
+  padding-top: 15px;
+font-size: 32px;
+font-weight: 400;
+color: @grey;
+
+
+
+}
+    }
+
+    &-list{
+        margin-top: 80px;
+        margin-bottom: 50px;
+        padding-top: 50px;
+        margin-left: 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+     
+    }
+
+}
+//projects
+.project{
+    margin-top: 80px;
+    text-align: center;
+    margin-bottom: 80px;
+
+
+    h2{
+        color: @content;
+            
+        font-size: 48px;
+        font-weight: 700;
+    
+    }
+    h3{
+     
+      padding-top: 15px;
+    font-size: 32px;
+    font-weight: 400;
+    color: @grey;
+    
+    
+    
+    }
+    .project-cards{
+        display: flex;
+        flex-wrap: wrap;
+       
+.card{
+    margin: 25px 15px;
+    
+    width: 373px;
+height: 567px;
+
+border-radius: 20px;
+box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2);
+
+h4{
+  margin-top: 15px;  
+font-size: 28px;
+font-weight: 500;
+line-height: 26px;
+
+
+}
+p{
+   margin: 25px ;
+font-size: 18px;
+font-weight: 300;
+line-height: 26px;
+color: @grey;
+text-align: left;
+
+}
+small{
+margin-top: 35px;
+font-size: 14px;
+font-weight: 300;
+line-height: 26px;
+text-align: justify;
+
+
+}
+a{
+    color: rgba(0, 0, 0, 1);
+padding: 25px;
+
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+img{
+    padding-right: 15px;
+    padding-top: 10px;
+}
+
+}
+
+}
+    }
+}
+
+//footer
+footer{
+    margin-top: 80px;
+
+    .footer-contact{
+        display: flex;
+       justify-content: space-between;
+        margin-top: 80px;
+        padding-bottom: 25px;
+        border-bottom: 2px solid @grey;
+        
+        .contact-logo {
+            width: 97px;
+            height: 59px;
+
+
+        }
+      
+        a{
+         
+            text-decoration: none;
+            color: rgba(66, 68, 110, 1);
+        }
+        &-contacts {
+            margin-left: 350px;
+          
+            display: flex;
+            a{
+                padding: 0 35px;
+
+            }
+            
+    
+    }
+
+.footer-contacts-links{
+ 
+ img{
+    width: 30px;
+    height: 29.26px;
+
+}
+}
+
+}
+        
+    
+    
+    .footer-menu{
+        margin-top: 35px;
+        font-family: DM Sans;
+font-size: 18px;
+font-weight: 400;
+line-height: 26px;
+color: @content;
+
+        display: flex;
+        justify-content: space-between;
+        &-link{
+            list-style: none;
+            display: flex;
+          
+            a{
+                text-decoration: none;
+                margin-right: 45px;
+            }
+        }
+        .info{
+        padding-bottom: 50px;
+font-size: 18px;
+font-weight: 400;
+line-height: 26px;
+
+span{
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(90deg, #13B0F5 -2.06%, #E70FAA 100%);
+}
+b{
+    color: transparent;
+    font-weight: 400;
+    background-clip: text;
+    background-image: linear-gradient(90deg, #ae13f5 -2.06%, #9b1172 100%);
+}
+        }
+    }
+}
+
+@media(max-width:768px){
+
+    body{
+        
+    }
+    .container{
+        max-width: 750px;
+        padding: 25px;
+        margin: 0 auto;
+    }
+
+    header{display: flex;
+        text-align: center;
+   
+    
+        .menu{
+           flex-direction: column;
+
+           .menu-link{
+           justify-content:flex-end;
+margin-left: 5px;
+     padding-top: 25px;
+     padding-bottom: 25px;
+     margin-right: 5px;
+    
+ 
+           }
+        }
+    }
+
+    main{  text-align: center;
+        .main-content-text{
+          
+            font-size: 28px;
+        }
+        .main-content-ava img{
+            width: 220px;
+            height: 220px;
+            margin-top: 35px;
+            margin-right: 25px;
+        }
+    }
+    .stack{
+        overflow: hidden;
+        .stack-list {
+      
+        justify-content: center;
+        img{
+            width: 60px;
+            height: 60px;
+            padding-right: 15px;
+
+
+        }}
+    }
+    .project{
+        text-align: center;
+        .project-cards{
+           justify-content: center;
+      
+         
+        }
+    }
+    footer{
+        .footer-contact{
+            text-align: center;
+            flex-direction: column;
+            .contact-logo{
+               display: none;
+            }
+            &-contacts {
+           justify-content: center;
+           margin-left: 0;
+           padding-bottom: 25px;
+            }
+        }
+        .footer-menu{display: inline;
+            padding-top: 25px;
+        .footer-menu-link{
+            display: none;
+        }
+        .info p {
+            
+            text-align: center;
+            padding-top: 35px;
+            font-size: 14px;
+        }}
+    }
+}
